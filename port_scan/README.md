@@ -44,25 +44,25 @@ Note: OS detection (-O) usually requires root/administrator privileges. Run the 
 ## 🛠 Usage
 1. Basic Scan (Default Port 80)
 ```bash
-python scanner.py 192.168.1.1
+python port_scan.py 192.168.1.1
 ```
 2. Scan a Specific Port or List
 ```bash
-python scanner.py 192.168.1.1 -p 22,80,443
+python port_scan.py 192.168.1.1 -p 22,80,443
 ```
 3. Scan a Port Range
 ```bash
-python scanner.py 192.168.1.1 -sp 1 -lp 1024
+python port_scan.py 192.168.1.1 -sp 1 -lp 1024
 ```
 4. Scan Ports from a File
 
 Create a ports.txt with one port per line, then run:
 ```bash
-python scanner.py 192.168.1.1 -f ports.txt
+python port_scan.py 192.168.1.1 -f ports.txt
 ```
 5. Custom Output File
 ```bash
-python scanner.py 192.168.1.1 -p 80 -o my_report.csv
+python port_scan.py 192.168.1.1 -p 80 -o my_report.csv
 ```
 ## 📊 Output Format
 The script generates a CSV file with the following columns: 
